@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+ 
+{% block content %}
+    <h2>List of CloudStack API calls</h2>
+    <ul>
+        <li>
+            <a href="{{ url_for("users") }}">List of Users</a>
+        </li>
+        <li>
+            <a href="{{ url_for("vms") }}">List of Virtual Machines</a>
+        </li>
+        <li>
+            <a href="{{ url_for("templates") }}">List of Templates</a>
+        </li>
+    </ul>
+{% endblock content %}

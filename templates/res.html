@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if results %}
+{% for res in results[results.keys()[1]] %}
+<table>
+{% for key, value in res.iteritems() %}
+   <tr>
+        <th> {{ key }} </th>
+        <td> {{ value }} </td>
+   </tr>
+{% endfor %}
+</table>
+{% endfor %}
+{% else %}
+Hello World!
+{% endif %}
+
+{% endblock content %}
